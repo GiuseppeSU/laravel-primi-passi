@@ -40,6 +40,6 @@ Route::get('/', function () {
 
 Route::get('chi-siamo', function () {
 
-    return view('about', ['message' => 'Siamo la classe 87 e siamo arrivati a studiare laravel']);
+    return view('about', ['message' => 'Che Dio ci aiuti con Laravel =)']);
 
 })->name('about');
