@@ -43,3 +43,22 @@ Route::get('chi-siamo', function () {
     return view('about', ['message' => 'Che Dio ci aiuti con Laravel =)']);
 
 })->name('about');
+
+
+Route::get('sponsor', function () {
+    $data = [
+
+
+        'aziende' => [
+            'Sony',
+            'Samsung',
+            'Apple',
+            'Microsoft'
+        ],
+
+    ];
+
+
+    return view('sponsor', $data, ['message' => 'tutte le aziende che collaborano con noi!']);
+
+})->name('sponsor');

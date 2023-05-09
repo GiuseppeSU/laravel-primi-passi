@@ -21,6 +21,11 @@
 
     <main>
         <p>{{$message}}</p>
+        <ul>
+                @foreach ($aziende as $azienda)
+                    <li>{{$azienda}}</li>
+                @endforeach
+            </ul>
     </main>
 </body>
 </html>
